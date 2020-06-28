@@ -4,7 +4,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfEmail" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'email',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;        'prepend'           =&gt; __( '', 'tribe' ), // appears before the input&#10;        'append'            =&gt; __( '', 'tribe' ), // appears after the input&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF email field" toReformat="true" toShortenFQNames="true">
@@ -12,7 +13,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfFile" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'file',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'return_format' =&gt; 'array', // array, url, id&#10;        'library' =&gt; 'all', // all, uploadedTo&#10;        'min_size' =&gt; '', // (int) in MB&#10;        'max_size' =&gt; '', // (int) in MB&#10;        'mime_types' =&gt; '', // .jpg, .gif       &#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF file upload field" toReformat="true" toShortenFQNames="true">
@@ -20,7 +22,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfGallery" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'gallery',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'return_format' =&gt; 'url', // array, url, id &#10;        'preview_size' =&gt; 'full', // thubnail size ID&#10;        'insert' =&gt; 'append', // Where attachments are inserted: append, prepend&#10;        'library' =&gt; 'all', // all, uploadedTo&#10;        'min' =&gt; '', // (int)&#10;        'max' =&gt; '', // (int)&#10;        'min_width' =&gt; '', // (int) px&#10;        'min_height' =&gt; '', // (int) px&#10;        'min_size' =&gt; '', // (int) MB&#10;        'max_width' =&gt; '', // (int) px&#10;        'max_height' =&gt; '', // (int) px&#10;        'max_size' =&gt; '', // (int) MB&#10;        'mime_types' =&gt; '', // .jpg, .gif&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF gallery field" toReformat="true" toShortenFQNames="true">
@@ -28,7 +31,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfImage" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'image',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'preview_size'      =&gt; 'medium', // thubnail size id&#10;        'library'           =&gt; 'all', // all, uploadedTo&#10;        'min_width'         =&gt; '', // (int) px&#10;        'min_height'        =&gt; '', // (int) px&#10;        'min_size'          =&gt; '', // (int) MB&#10;        'max_width'         =&gt; '', // (int) px&#10;        'max_height'        =&gt; '', // (int) px&#10;        'max_size'          =&gt; '', // (int) MB&#10;        'mime_types'        =&gt; '', // .jpg, .gif      &#10;        'return_format'     =&gt; 'array', // array, url, id&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF image field" toReformat="true" toShortenFQNames="true">
@@ -36,7 +40,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfMessage" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'message',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'message'           =&gt; '',&#10;        'new_lines'         =&gt; 'wpautop', // wpautop, br, ''&#10;        'esc_html'          =&gt; true,&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF message field" toReformat="true" toShortenFQNames="true">
@@ -44,7 +49,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfNumber" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'number',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;        'prepend'           =&gt; __( '', 'tribe' ),&#10;        'append'            =&gt; __( '', 'tribe' ),&#10;        'min'               =&gt; '', // (int)&#10;        'max'               =&gt; '', // (int)&#10;        'step'              =&gt; '', // (float)&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF number field" toReformat="true" toShortenFQNames="true">
@@ -52,7 +58,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfOembed" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'oembed',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'width'     =&gt; '', // (int)&#10;        'height'    =&gt; '', // (int)       &#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF oembed field" toReformat="true" toShortenFQNames="true">
@@ -60,7 +67,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfPageLink" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'page_link',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'post_type'         =&gt; [&#10;            'page',&#10;            'post',&#10;        ],&#10;        'taxonomy' =&gt; [&#10;            'category:uncategorized', // tax:term&#10;        ],&#10;        'allow_null'        =&gt; false,&#10;        'allow_archives'    =&gt; false,&#10;        'multiple'          =&gt; false,&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF page link field" toReformat="true" toShortenFQNames="true">
@@ -68,7 +76,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfPostObject" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'post_object',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'post_type'         =&gt; [&#10;            'page',&#10;            'post',&#10;        ],&#10;        'taxonomy'          =&gt; [&#10;            'category:uncategorized', // tax:term&#10;        ],&#10;        'allow_null'        =&gt; false,&#10;        'multiple'          =&gt; false,&#10;        'ui'                =&gt; true, &#10;        'return_format' =&gt; 'object', // object, id                          &#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF post object field" toReformat="true" toShortenFQNames="true">
@@ -76,7 +85,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfPassword" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'password',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;        'prepend'           =&gt; __( '', 'tribe' ),&#10;        'append'            =&gt; __( '', 'tribe' ),&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF password field" toReformat="true" toShortenFQNames="true">
@@ -84,7 +94,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfRadio" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'radio',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'choices'           =&gt; [&#10;            'red'  =&gt; __( 'Red', 'tribe' ),&#10;            'blue' =&gt; __( 'Blue', 'tribe' ),&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'layout'            =&gt; 'vertical', // vertical, horizontal.&#10;        'other_choice'      =&gt; false,&#10;        'save_other_choice' =&gt; false,&#10;        'return_format'     =&gt; 'value', // value, label, array&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF radio field" toReformat="true" toShortenFQNames="true">
@@ -92,7 +103,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfRelationship" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'relationship',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'post_type'         =&gt; [&#10;            'page',&#10;            'post',&#10;        ],&#10;        'taxonomy'          =&gt; [&#10;            'category:uncategorized', // tax:term&#10;        ],&#10;        'filters'           =&gt; [&#10;            'search',&#10;            'post_type',&#10;            'taxonomy',&#10;        ],&#10;        'elements'          =&gt; [&#10;            'featured_image',&#10;        ],&#10;        'min'               =&gt; '', // (int)&#10;        'max'               =&gt; '', // (int)&#10;        'return_format'     =&gt; 'object', // object, id&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF relationship field" toReformat="true" toShortenFQNames="true">
@@ -100,12 +112,14 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfrepeater" value="$name_of_field = array(&#10;&#9;'key' =&gt; 'field_name_of_field',&#10;&#9;'label' =&gt; 'Name of Field',&#10;&#9;'name' =&gt; 'name_of_field',&#10;&#9;'type' =&gt; 'repeater',&#10;&#9;'instructions' =&gt; '',&#10;&#9;'required' =&gt; 0,&#10;&#9;'conditional_logic' =&gt; 0,&#10;&#9;'wrapper' =&gt; array(&#10;&#9;&#9;'width' =&gt; '',&#10;&#9;&#9;'class' =&gt; '',&#10;&#9;&#9;'id' =&gt; '',&#10;&#9;),&#10;&#9;'collapsed' =&gt; '',&#10;    'min' =&gt; '',&#10;    'max' =&gt; '',&#10;    'layout' =&gt; 'table', // can use: row, block, table&#10;    'button_label' =&gt; 'Add Row',&#10;    'sub_fields' =&gt; array (&#10;        /* Add fields here */&#10;    ),&#10;);" description="ACF repeater field" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfSelect" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'select',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;        'default_value'     =&gt; [],&#10;        'choices'           =&gt; [&#10;            'red'  =&gt; __( 'Red', 'tribe' ),&#10;            'blue' =&gt; __( 'Blue', 'tribe' ),&#10;        ],&#10;        'multiple'          =&gt; false,&#10;        'ui'                =&gt; false,&#10;        'ajax'              =&gt; false, // lazy load        &#10;        'return_format'     =&gt; 'value', // value, label, array&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF select field" toReformat="true" toShortenFQNames="true">
@@ -113,7 +127,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfTextArea" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'textarea',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;        'maxlength'         =&gt; '', // (int)&#10;        'rows'              =&gt; '', // (int)&#10;        'new_lines'         =&gt; '', // wpautop, br, ''&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF textarea field" toReformat="true" toShortenFQNames="true">
@@ -121,7 +136,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfTab" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'tab',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'placement'         =&gt; 'top', // top, left&#10;        'endpoint'          =&gt; false, // this will end other tabs&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF tab field" toReformat="true" toShortenFQNames="true">
@@ -129,7 +145,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfTaxonomy" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'taxonomy',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'taxonomy'          =&gt; 'post_tag',&#10;        'field_type'        =&gt; 'checkbox', // checkbox, multi_select, radio, select&#10;        'add_term'          =&gt; false,&#10;        'save_terms'        =&gt; false,&#10;        'load_terms'        =&gt; false,       &#10;        'multiple'          =&gt; false,&#10;        'allow_null'        =&gt; false,&#10;        'return_format'     =&gt; 'id', // object, id        &#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF taxonomy field" toReformat="true" toShortenFQNames="true">
@@ -137,7 +154,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfText" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'text',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;        'prepend'           =&gt; __( '', 'tribe' ),&#10;        'append'            =&gt; __( '', 'tribe' ),&#10;        'maxlength'         =&gt; '', // (int)&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF Text Field" toReformat="true" toShortenFQNames="true">
@@ -145,7 +163,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfTrueFalse" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'true_false',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; false,&#10;        'message'           =&gt; __( '', 'tribe' ),&#10;        'ui'                =&gt; true,&#10;        'ui_on_text'        =&gt; __( '', 'tribe' ),&#10;        'ui_off_text'       =&gt; __( '', 'tribe' ),&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF true/false field" toReformat="true" toShortenFQNames="true">
@@ -153,7 +172,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfUrl" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'url',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'placeholder'       =&gt; __( '', 'tribe' ),&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF URL field" toReformat="true" toShortenFQNames="true">
@@ -161,7 +181,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfUser" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'user',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'role'              =&gt; [], // an array of roles to filter by&#10;        'allow_null'        =&gt; false,&#10;        'multiple'          =&gt; false,&#10;        'return_format'     =&gt; 'array', // array, object, id&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF user field" toReformat="true" toShortenFQNames="true">
@@ -169,7 +190,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfWysiwyg" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'wysiwyg',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'tabs'              =&gt; 'all', // all, visual, text&#10;        'toolbar'           =&gt; 'full', // full, basic&#10;        'media_upload'      =&gt; true,&#10;        'delay'             =&gt; false, // initialize tinymce when clicked&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF WYSIWYG field" toReformat="true" toShortenFQNames="true">
@@ -177,7 +199,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfLink" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'link',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'return_format'     =&gt; 'array', // array, url&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF Link Field" toReformat="true" toShortenFQNames="true">
@@ -185,7 +208,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
   <template name="acfRange" value="/**&#10; * $Comment$&#10; *&#10; * @return ACF\Field&#10; */&#10;private function get_$Name$_field(): ACF\Field {&#10;    $field = new ACF\Field( self::NAME . '_' . self::$Constant$ );&#10;    &#10;    $field-&gt;set_attributes( [&#10;        'label'             =&gt; __( '$END$', 'tribe' ),&#10;        'name'              =&gt; self::$Constant$,&#10;        'type'              =&gt; 'range',&#10;        'instructions'      =&gt; __( '', 'tribe' ),&#10;        'required'          =&gt; false,&#10;        'conditional_logic' =&gt; false,&#10;        'wrapper'           =&gt; [&#10;            'width' =&gt; '',&#10;            'class' =&gt; '',&#10;            'id'    =&gt; '',&#10;        ],&#10;        'default_value'     =&gt; '',&#10;        'min'               =&gt; '' // (int)&#10;        'max'               =&gt; '' // (int)&#10;        'step'              =&gt; '' // (float)&#10;        'prepend'           =&gt; __( '', 'tribe' ),&#10;        'append'            =&gt; __( '', 'tribe' ),&#10;    ] );&#10;&#10;    return $field;&#10;}" description="ACF Range Field" toReformat="true" toShortenFQNames="true">
@@ -193,7 +217,8 @@
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Constant" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Trait Member" value="true" />
     </context>
   </template>
 </templateSet>
